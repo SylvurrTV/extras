@@ -667,4 +667,413 @@ border-radius: 8px;
 transition: transform 0.18s ease-out;
 }
 
+
+/* ==========================================
+ *   IMPROVED MOBILE RESPONSIVE STYLES
+ *   Append to the bottom of your stylesheet
+ * ========================================== */
+
+/* General mobile improvements */
+@media (max-width: 768px) {
+
+    body {
+        background-attachment: scroll;
+        background-position: center top;
+    }
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.2rem;
+        width: 100%;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 0.9rem;
+        padding: 0.3rem;
+    }
+
+
+    /* HERO SECTION */
+    .hero {
+        padding: 3.5rem 1.2rem;
+    }
+
+    .hero-title {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    .hero h2 {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .hero img {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    /* LINKS */
+    .links {
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 420px;
+        padding: 0 0.5rem;
+        gap: 0.6rem;
+    }
+
+    .links a {
+        width: 100%;
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .links a img {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    /* OLD VERSIONS */
+    .old_versions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        max-width: 420px;
+        padding: 0 0.5rem;
+        gap: 0.6rem;
+    }
+
+    .old_versions a {
+        margin-top: 0;
+        padding: 0.7rem 0.5rem;
+        font-size: 0.95rem;
+    }
+
+
+    /* GENERAL SECTIONS */
+    .about,
+    .socials,
+    .gallery,
+    .featured-posters {
+        padding: 2.5rem 1.2rem;
+    }
+
+    .about h2,
+    .socials h2,
+    .gallery h2,
+    .featured-posters h2,
+    .heading h2 {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .about p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+
+    /* SOCIAL ICONS */
+    .social-icons a {
+        margin: 0 0.5rem;
+        font-size: 1.6rem;
+    }
+
+
+    /* POSTER GRID */
+    .poster-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        max-width: 100%;
+        gap: 0.8rem;
+    }
+
+    .poster {
+        min-width: 0;
+    }
+
+    .poster-title {
+        font-size: 0.95rem;
+    }
+
+    .poster-game {
+        font-size: 0.75rem;
+    }
+
+    .poster-info {
+        padding: 0.8rem 0.6rem;
+    }
+
+
+    /* GALLERY */
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 100%;
+        gap: 0.8rem;
+    }
+
+    .gallery-grid img {
+        width: 100%;
+    }
+
+
+    /* MOD PAGE */
+    .mod-page {
+        width: 100%;
+        max-width: 100%;
+        padding: 2rem 1.2rem;
+    }
+
+    .mod-header {
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .mod-thumbnail {
+        width: 120px;
+        height: 120px;
+    }
+
+    .mod-header h1 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    .mod-game {
+        font-size: 0.9rem;
+    }
+
+    .mod-author {
+        font-size: 0.85rem;
+    }
+
+    .mod-short-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .mod-page h2 {
+        font-size: 1.3rem;
+    }
+
+    .mod-description p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+
+    /* MOD SCREENSHOTS */
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+    }
+
+    .screenshot-grid img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+
+    /* DOWNLOAD SECTION */
+    .mod-download {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+
+    .mod-download a {
+        padding: 0.85rem;
+    }
+
+
+    /* COLLAPSIBLE SECTIONS */
+    .collapsible {
+        width: 100%;
+        text-align: left;
+        padding: 0.85rem 1rem;
+    }
+
+    .collapsible-content {
+        padding: 0.5rem 0.8rem;
+    }
+
+
+    /* IMAGE VIEWER */
+    #viewer-close {
+    top: 0.7rem;
+    right: 0.7rem;
+    font-size: 1.8rem;
+    }
+
+    .viewer-nav {
+        font-size: 1.1rem;
+        padding: 0.5rem;
+    }
+
+    #viewer-prev {
+    left: 0.5rem;
+    }
+
+    #viewer-next {
+    right: 0.5rem;
+    }
+
+    #viewer-caption {
+    bottom: 0.8rem;
+    width: calc(100% - 5rem);
+    text-align: center;
+    font-size: 0.85rem;
+    }
+
+
+    /* FOOTER */
+    footer {
+        padding: 1.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+}
+
+
+/* ==========================================
+ *   SMALL PHONES
+ * ========================================== */
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 2.8rem 1rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .old_versions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .poster-grid {
+        grid-template-columns: 1fr;
+        max-width: 340px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .mod-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mod-thumbnail {
+        width: 140px;
+        height: 140px;
+    }
+
+    .mod-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .mod-download {
+        margin-top: 0.5rem;
+    }
+
+}
+
+
+/* ==========================================
+ *   VERY SMALL PHONES
+ * ========================================== */
+
+@media (max-width: 360px) {
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        gap: 0.4rem 0.8rem;
+    }
+
+    nav a {
+        font-size: 0.82rem;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    .links a {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.7rem;
+    }
+
+    .about,
+    .socials,
+    .gallery,
+    .featured-posters {
+        padding: 2rem 0.9rem;
+    }
+
+}
+
+
+/* ==========================================
+ *   TOUCHSCREEN IMPROVEMENTS
+ * ========================================== */
+
+@media (hover: none) {
+
+    .poster:hover,
+    .poster-grid img:hover,
+    .gallery img:hover,
+    .gallery img:hover,
+    .links a:hover,
+    .old_versions a:hover,
+    .see-all:hover,
+    .mod-download a:hover,
+    .collapsible:hover {
+        transform: none;
+    }
+
+}
+
+
 }
