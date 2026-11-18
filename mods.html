@@ -4,151 +4,204 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SylvurrTV's Mods</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: url('./img/purple.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
-      position: relative;
-      z-index: 0;
-    }
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(6, 12, 33, 0.5);
-      z-index: -1;
-    }
-    .profile {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .profile img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid #ffffff;
-    }
-    .links {
-      width: 100%;
-      max-width: 500px;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .link {
-      background: #1a1f38;
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: bold;
-      transition: background 0.3s, transform 0.2s;
-    }
-    .link:hover {
-      background: #2a3060;
-      transform: scale(1.02);
-    }
-    .embed, .image, .music {
-      margin: 1rem 0;
-      width: 100%;
-      max-width: 500px;
-    }
-    iframe {
-      width: 100%;
-      height: 315px;
-      border: none;
-      border-radius: 10px;
-    }
-    img.full-width {
-      width: 100%;
-      border-radius: 10px;
-      border: 2px solid #ffffff;
-    }
-
-    .bottomlink {
-      color: #ffffff;
-      text-decoration: none;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    .heading {
-      color: #32c7c7;
-    }
-
-    .pride img:hover {
-    transform: scale(1.1);
-  }
-    .image-heading img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-      display: block;
-      margin: 2rem auto;
-      border-radius: 50px;
-  }
-
-  </style>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <div class="image-heading">
-    <img src="./img/mods.png" alt="Mods Heading"></img>
-  </div>
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Sylvurr Logo">
+      <h1>SylvurrTV</h1>
+      <div class="social-icons">
+        <a href="https://youtube.com/@SylvurrTV" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://sylvurrtv.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+        <a href="https://github.com/SylvurrTV" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <nav>
+      <a href="https://sylvurr.com">Home</a>
+      <a href="/mods">Mods</a>
+      <a href="/games">Games</a>
+      <a href="/posters">Gallery</a>
+      <a href="/whatelse">Other Stuff</a>
+    </nav>
+  </header>
 
-  <h2 class="heading">People Playground</h2>
+  <section class="hero">
+    <div class="hero-title">
+      <h2 style="font-size: 5rem;">My Mods</h2>
+    </div>
+  </section>
 
-  <div class="links">
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3594722572" class="link">Heathers: The Musical</a>
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3120237838" class="link">The QSMP Mod</a>
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3661886179" class="link">Life Is Strange</a>
-  </div>
+  <section class="featured-posters">
+    <h2>People Playground</h2>
+    <div class="poster-grid">
+    <div class="poster">
+        <a href="mods/ppg/heathers">
+        <img src="img/heathersmod.png" alt="Heathers: The Musical">
+        <div class="poster-info">
+            <div class="poster-title">Heathers: The Musical</div>
+            <div class="poster-game">People Playground</div>
+        </div></a>
+    </div>
 
-  <h2 class="heading">Red Autumn SPD</h2>
+    <div class="poster">
+        <a href="mods/ppg/qsmp">
+        <img src="img/qsmpmod.png" alt="The QSMP Mod">
+        <div class="poster-info">
+            <div class="poster-title">The QSMP Mod</div>
+            <div class="poster-game">People Playground</div>
+        </div></a>
+    </div>
 
-  <div class="links">
-    <a href="https://spd.sylvurr.com/" class="link">Sandbox Mod</a>
-    <a href="https://dynamic.sylvurr.com/" class="link">Dynamic Sandbox Mod</a>
-    <a href="https://biennio.sylvurr.com" class="link">Biennio Rosso Sandbox Mod</a>
-    <a href="https://reduxsandbox.sylvurr.com/" class="link">Redux Sandbox Mod</a>
-  </div>
+    <div class="poster">
+        <a href="mods/ppg/lis">
+        <img src="img/lismod.png" alt="Life Is Strange">
+        <div class="poster-info">
+            <div class="poster-title">Life Is Strange</div>
+            <div class="poster-game">People Playground</div>
+        </div></a>
+    </div>
+</div>
+  </section>
 
-  <h2 class="heading">Age of History 2: Definitive Edition</h2>
+  <section class="featured-posters">
+    <h2>Red Autumn Social Democracy</h2>
+    <div class="poster-grid" style="grid-template-columns: repeat(4, 300px);">
+    <div class="poster">
+        <a href="mods/spd/sandbox">
+        <img src="img/spd_sandbox.png" alt="The Sandbox Mod">
+        <div class="poster-info">
+            <div class="poster-title">The Sandbox Mod</div>
+            <div class="poster-game">Red Autumn Social Democracy</div>
+        </div></a>
+    </div>
 
-  <div class="links">
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3707442862" class="link">Ideologies Toolbox</a>
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3707487041" class="link">Everything Free</a>
-  </div>
+    <div class="poster">
+        <a href="mods/spd/dynamic-sandbox">
+        <img src="img/spd_dynamic.png" alt="Dynamic Sandbox">
+        <div class="poster-info">
+            <div class="poster-title">Dynamic Sandbox</div>
+            <div class="poster-game">Red Autumn Social Democracy</div>
+        </div></a>
+    </div>
 
-  <h2 class="heading">Age of History 3</h2>
+    <div class="poster">
+        <a href="mods/spd/redux-sandbox">
+        <img src="img/spd_redux.png" alt="Redux Sandbox">
+        <div class="poster-info">
+            <div class="poster-title">Redux Sandbox</div>
+            <div class="poster-game">Red Autumn Social Democracy</div>
+        </div></a>
+    </div>
 
-  <div class="links">
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3354133554" class="link">Improved Sandbox</a>
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3355046123" class="link">Unlimited Alliances</a>
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3355039846" class="link">No Alliances</a>
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3354111085" class="link">Germany Colour Fix</a>
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3354085461" class="link">Declare War With Any Relations</a>
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3354122253" class="link">Free Technologies</a>
-  </div>
+    <div class="poster">
+        <a href="mods/spd/biennio-sandbox">
+        <img src="img/spd_biennio.png" alt="Biennio Rosso Sandbox">
+        <div class="poster-info">
+            <div class="poster-title">Biennio Rosso Sandbox</div>
+            <div class="poster-game">Red Autumn Social Democracy</div>
+        </div></a>
+    </div>
+</div>
+  </section>
 
-    <h2 class="heading">Not Mods</h2>
+  <section class="featured-posters">
+    <h2>Age of History 2: Definitive Edition</h2>
+    <div class="poster-grid" style="grid-template-columns: repeat(2, 300px);">
+    <div class="poster">
+        <a href="mods/aoh2de/ideologies">
+        <img src="img/aoh2de_ideologies.png" alt="Ideologies Toolbox">
+        <div class="poster-info">
+            <div class="poster-title">Ideologies Toolbox</div>
+            <div class="poster-game">AOH2:DE</div>
+        </div></a>
+    </div>
 
-  <div class="links">
-    <a href="https://sylvurr.com" class="link">Go Back</a>
-  </div>
+    <div class="poster">
+        <a href="mods/aoh2de/free-everything">
+        <img src="img/aoh2de_free.png" alt="Everything Free">
+        <div class="poster-info">
+            <div class="poster-title">Everything Free</div>
+            <div class="poster-game">AOH2:DE</div>
+        </div></a>
+    </div>
+</div>
+  </section>
 
-  <a href="https://sylvurr.com/" class="bottomlink">Visit the Main Website</a>
+  <section class="featured-posters">
+    <h2>Age of History 3</h2>
+    <div class="poster-grid">
+    <div class="poster">
+        <a href="mods/aoh3/sandbox">
+        <img src="img/aoh3_sandbox.png" alt="Improved Sandbox">
+        <div class="poster-info">
+            <div class="poster-title">Improved Sandbox</div>
+            <div class="poster-game">Age of History 3</div>
+        </div></a>
+    </div>
+
+    <div class="poster">
+        <a href="mods/aoh3/unlimited-alliances">
+        <img src="img/aoh3_unlim.png" alt="Unlimited Alliances">
+        <div class="poster-info">
+            <div class="poster-title">Unlimited Alliances</div>
+            <div class="poster-game">Age of History 3</div>
+        </div></a>
+    </div>
+
+    <div class="poster">
+        <a href="mods/aoh3/no-alliances">
+        <img src="img/aoh3_noalliances.png" alt="No Alliances">
+        <div class="poster-info">
+            <div class="poster-title">No Alliances</div>
+            <div class="poster-game">Age of History 3</div>
+        </div></a>
+    </div>
+
+    <div class="poster">
+        <a href="mods/aoh3/colour-fix">
+        <img src="img/aoh3_colour.png" alt="Germany Colour Fix">
+        <div class="poster-info">
+            <div class="poster-title">Germany Colour Fix</div>
+            <div class="poster-game">Age of History 3</div>
+        </div></a>
+    </div>
+
+    <div class="poster">
+        <a href="mods/aoh3/war-relations">
+        <img src="img/aoh3_war_relations.png" alt="Declare War With Any Relations">
+        <div class="poster-info">
+            <div class="poster-title">Declare War With Any Relations</div>
+            <div class="poster-game">Age of History 3</div>
+        </div></a>
+    </div>
+
+    <div class="poster">
+        <a href="mods/aoh3/free-tech">
+        <img src="img/aoh3_tech.png" alt="Free Technologies">
+        <div class="poster-info">
+            <div class="poster-title">Free Technologies</div>
+            <div class="poster-game">Age of History 3</div>
+        </div></a>
+    </div>
+</div>
+  </section>
+
+   <section class="socials">
+    <h2>Follow Me</h2>
+    <div class="social-icons">
+      <a href="https://youtube.com/@SylvurrTV" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://sylvurrtv.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+        <a href="https://github.com/SylvurrTV" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 SylvurrTV</p>
+  </footer>
 
 </body>
 </html>

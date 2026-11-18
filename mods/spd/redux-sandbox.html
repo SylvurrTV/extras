@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Democracy Redux Sandbox - SylvurrTV</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <script src="/mods/viewer.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+      <img src="/img/logo.png" alt="Sylvurr Logo">
+      <h1>SylvurrTV</h1>
+      <div class="social-icons">
+        <a href="https://youtube.com/@SylvurrTV" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://sylvurrtv.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+        <a href="https://github.com/SylvurrTV" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <nav>
+      <a href="https://sylvurr.com">Home</a>
+      <a href="/mods">Mods</a>
+      <a href="/games">Games</a>
+      <a href="/posters">Gallery</a>
+      <a href="/whatelse">Other Stuff</a>
+    </nav>
+  </header>
+
+
+    <main class="mod-page">
+
+        <!-- Mod Header -->
+        <section class="mod-header">
+
+            <div class="mod-thumbnail">
+                <img src="/img/spd_redux.png" alt="Mod Thumbnail">
+            </div>
+
+            <div class="mod-info">
+                <h1 style="margin-bottom: 0.75rem;">Social Democracy Redux Sandbox</h1>
+                <p class="mod-game">Red Autumn Social Democracy</p>
+                <p class="mod-author">Created by SylvurrTV & CuttleCraft</p>
+                <p class="mod-short-description">
+                    A mod which adds a sandbox menu to Social Democracy Redux.
+                </p>
+            </div>
+
+            <div class="mod-download">
+                <a href="https://reduxsandbox.sylvurr.com/" target="_blank" rel="noopener noreferrer">
+                    Play
+                </a>
+                <a href="https://github.com/SylvurrTV/Social-Democracy-Redux-Sandbox" target="_blank" rel="noopener noreferrer">
+                    Github
+                </a>
+            </div>
+        </section>
+
+
+        <!-- Mod Description -->
+        <section class="mod-description">
+
+            <h2>Description</h2>
+
+            <p>
+                This mod adds a sandbox menu which enables you to play the Redux submod for Social Democracy: An Alternate History any way you want! It adds options such as modifying the budget & resources, clearing your hand and changing party support.
+            </p>
+            <p>
+                Note that mods do not work in the Steam version of the game.
+            </p></br>
+            <a href="https://red-autumn.itch.io/social-democracy/">Original Game</a></br>
+            <a href="https://cuttlecraft.github.io/social_democracy_redux/">Original Redux Mod</a></br>
+            <p>
+                To implement the sandbox mod into your own / a different mod, follow the guide in this <a href="https://github.com/SylvurrTV/spd-sandbox">Github repository!</a>
+            </p>
+        </section>
+
+
+        <!-- Screenshots -->
+        <section class="mod-screenshots">
+
+            <h2>Screenshots</h2>
+
+            <div class="screenshot-grid">
+                <img src="/img/redux-sandbox/1.png" alt="Screenshot">
+                <img src="/img/redux-sandbox/2.png" alt="Screenshot">
+                <img src="/img/redux-sandbox/3.png" alt="Screenshot">
+            </div>
+
+        </section>
+
+    </main>
+
+    <section class="socials">
+    <h2>Follow Me</h2>
+    <div class="social-icons">
+      <a href="https://youtube.com/@SylvurrTV" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://sylvurrtv.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+        <a href="https://github.com/SylvurrTV" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 SylvurrTV</p>
+  </footer>
+
+  <div id="image-viewer" aria-hidden="true">
+    <button id="viewer-close" aria-label="Close (Esc)">&times;</button>
+    <button id="viewer-prev" class="viewer-nav" aria-label="Previous (Left)">&larr;</button>
+    <button id="viewer-next" class="viewer-nav" aria-label="Next (Right)">&rarr;</button>
+    <div id="viewer-container" role="presentation">
+        <img id="viewer-image" src="" alt="">
+    </div>
+    <div id="viewer-caption" aria-live="polite"></div>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+  </script>
+
+</body>
+</html>

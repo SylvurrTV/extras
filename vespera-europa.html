@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vespera Europa - SylvurrTV</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <script src="/mods/viewer.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+      <img src="/img/logo.png" alt="Sylvurr Logo">
+      <h1>SylvurrTV</h1>
+      <div class="social-icons">
+        <a href="https://youtube.com/@SylvurrTV" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://sylvurrtv.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+        <a href="https://github.com/SylvurrTV" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <nav>
+      <a href="https://sylvurr.com">Home</a>
+      <a href="/mods">Mods</a>
+      <a href="/games">Games</a>
+      <a href="/posters">Gallery</a>
+      <a href="/whatelse">Other Stuff</a>
+    </nav>
+  </header>
+
+
+    <main class="mod-page">
+
+        <!-- Mod Header -->
+        <section class="mod-header">
+
+            <div class="mod-thumbnail">
+                <img src="/img/vespera_thumb.png" alt="Mod Thumbnail">
+            </div>
+
+            <div class="mod-info">
+                <h1 style="margin-bottom: 0.75rem;">Vespera Europa (Preview)</h1>
+                <p class="mod-game">Simulation / Grand Strategy</p>
+                <p class="mod-author">Created by SylvurrTV</p>
+                <p class="mod-short-description">
+                    A modern-day grand strategy set in Europe.
+                </p>
+            </div>
+
+            <div class="mod-download">
+                <a href="https://sylvurrtv.itch.io/vespera-europa" target="_blank" rel="noopener noreferrer">
+                    Itch.io
+                </a>
+                <a href="https://github.com/SylvurrTV/vespera-europa" target="_blank" rel="noopener noreferrer">
+                    Github
+                </a>
+                <a href="https://beta.sylvurr.com" target="_blank" rel="noopener noreferrer">
+                    Play Preview
+                </a>
+            </div>
+        </section>
+
+
+        <!-- Mod Description -->
+        <section class="mod-description">
+
+            <h2>Description</h2>
+
+            <p>
+                This preview of Vespera Europa (sequel to <a href="/modernia">Modernia 1</a>) contains the full map of Europe, and a display of each province's name.
+            </p></br>
+            <p>
+                In the future, this game could follow a variety of paths, but currently I plan to include:</br>
+            <ul>
+                <li>Policies and governments (including dynamic coalitions and decisions)</li>
+                <li>Intergovernmental organisations such as the EU and UN (NATO may not be included to the extent that exists in real life, but we'll see)</li>
+                <li>Espionage and sabotage</li>
+                <li>Diplomatic crises and solutions rather than war, although war will still be possible</li>
+                <li>Research and special optional branches of gameplay that provide more customisation and accomplish specific goals (eg space programmes)</li>
+                <li>Full scenario editor WITH event support (similar to Age of History II)</li>
+                <li>Several starting scenarios, although expect to only see 2026 for the foreseeable future</li>
+                <li>Mod / custom scenario loader</li>
+                <li>Sandbox mode</li>
+                <li>And more!</li>
+            </ul></br>
+
+
+                If you have any ideas or suggestions for future aspects of the game (or any provinces that could have better names) please leave a comment in the discussion on itch.io!
+            </p>
+
+        </section>
+
+
+        <!-- Screenshots -->
+        <section class="mod-screenshots">
+
+            <h2>Screenshots</h2>
+
+            <div class="screenshot-grid">
+                <img src="/img/vespera/1.png" alt="Screenshot">
+                <img src="/img/vespera/3.png" alt="Screenshot">
+                <img src="/img/vespera/2.png" alt="Screenshot">
+            </div>
+
+        </section>
+
+    </main>
+
+    <section class="socials">
+    <h2>Follow Me</h2>
+    <div class="social-icons">
+      <a href="https://youtube.com/@SylvurrTV" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://sylvurrtv.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+        <a href="https://github.com/SylvurrTV" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 SylvurrTV</p>
+  </footer>
+
+  <div id="image-viewer" aria-hidden="true">
+    <button id="viewer-close" aria-label="Close (Esc)">&times;</button>
+    <button id="viewer-prev" class="viewer-nav" aria-label="Previous (Left)">&larr;</button>
+    <button id="viewer-next" class="viewer-nav" aria-label="Next (Right)">&rarr;</button>
+    <div id="viewer-container" role="presentation">
+        <img id="viewer-image" src="" alt="">
+    </div>
+    <div id="viewer-caption" aria-live="polite"></div>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+  </script>
+
+</body>
+</html>

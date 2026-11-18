@@ -1,153 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SylvurrTV</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: url('img/purple.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
-      position: relative;
-      z-index: 0;
-    }
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(6, 12, 33, 0.5);
-      z-index: -1;
-    }
-    .profile {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .profile img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid #ffffff;
-    }
-    .links {
-      width: 100%;
-      max-width: 500px;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .link {
-      background: #1a1f38;
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: bold;
-      transition: background 0.3s, transform 0.2s;
-    }
-    .link:hover {
-      background: #2a3060;
-      transform: scale(1.02);
-    }
-    .embed, .image, .music {
-      margin: 1rem 0;
-      width: 100%;
-      max-width: 500px;
-    }
-    iframe {
-      width: 100%;
-      height: 315px;
-      border: none;
-      border-radius: 10px;
-    }
-    img.full-width {
-      width: 100%;
-      border-radius: 10px;
-      border: 2px solid #ffffff;
-    }
-
-    .bottomlink {
-      color: #ffffff;
-      text-decoration: none;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    .heading {
-      color: #32c7c7;
-    }
-
-    .pride img:hover {
-    transform: scale(1.1);
-  }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="profile">
-    <img src="./img/logo.png" alt="Profile Picture">
-    <h1>SylvurrTV</h1>
-    <h4>she/her</h4>
-    <p>Maker of mods and other stuff</p>
-  </div>
 
-  <h2 class="heading">Socials</h2>
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Sylvurr Logo">
+      <h1>SylvurrTV</h1>
+      <div class="social-icons">
+        <a href="https://youtube.com/@SylvurrTV" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://sylvurrtv.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+        <a href="https://github.com/SylvurrTV" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <nav>
+      <a href="https://sylvurr.com">Home</a>
+      <a href="mods">Mods</a>
+      <a href="games">Games</a>
+      <a href="posters">Gallery</a>
+      <a href="whatelse">Other Stuff</a>
+    </nav>
+  </header>
 
-  <div class="links">
-    <a href="https://youtube.com/@SylvurrTV" class="link">YouTube</a>
-    <a href="https://sylvurrtv.itch.io" class="link">Itch.io</a>
-    <a href="https://youtube.com/@SylvurrVODS" class="link">YouTube VODs Channel</a>
-    <a href="https://bsky.app/profile/sylvurr.com" class="link">Bluesky</a>
-  </div>
+  <section class="hero">
+    <div class="hero-title">
+      <img src="img/logo.png" alt="Sylvurr Logo">
+      <h2>SylvurrTV</h2>
+    </div>
+    <p><b>Pronouns:</b> she/her</p></br>
+    <p>Hi! I'm infamous for creating mods for several games, for posting YouTube videos and for making a couple of bad strategy games :D</p>
+  </section>
 
-  <h2 class="heading">Projects & Stuff I Made</h2>
+  <section class="featured-posters">
+    <h2>My Mods</h2>
+    <div class="watermark-text">
+    <p>The best mods for games I've made! Featuring games from People Playground to Red Autumn Social Democracy.</p>
+    </div>
+    <div class="poster-grid">
+    <div class="poster">
+        <a href="mods/ppg/heathers">
+        <img src="img/heathersmod.png" alt="Heathers: The Musical">
+        <div class="poster-info">
+            <div class="poster-title">Heathers: The Musical</div>
+            <div class="poster-game">People Playground</div>
+        </div></a>
+    </div>
 
-  <div class="links">
-    <a href="https://sylvurr.com/mods" class="link">Mods I've Made</a>
-    <a href="https://sylvurr.com/calculan" class="link">Calculan</a>
-  </div>
+    <div class="poster">
+        <a href="mods/ppg/qsmp">
+        <img src="img/qsmpmod.png" alt="The QSMP Mod">
+        <div class="poster-info">
+            <div class="poster-title">The QSMP Mod</div>
+            <div class="poster-game">People Playground</div>
+        </div></a>
+    </div>
 
-  <h2 class="heading">Non-Itch Game Links</h2>
+    <div class="poster">
+        <a href="mods/spd/sandbox">
+        <img src="img/spd_sandbox.png" alt="The Sandbox Mod">
+        <div class="poster-info">
+            <div class="poster-title">The Sandbox Mod</div>
+            <div class="poster-game">Red Autumn Social Democracy</div>
+        </div></a>
+    </div>
+</div>
+</div>
+    <a href="./mods" class="see-all">See All →</a>
+  </section>
 
-  <div class="links">
-    <a href="https://play.sylvurr.com/v0.9.2" class="link">Modernia (v0.9.2)</a>
-    <a href="https://sylvurr.com/modernia" class="link">Play Modernia (Any version)</a>
-    <a href="https://github.com/SylvurrTV/modernia/releases" class="link">Download Modernia (Any version)</a>
-    <a href="https://sylvurr.com/birdnetic" class="link">Birdnetic</a>
-  </div>
+  <section id="games" class="about">
+    <h2>My Games</h2>
+    <div class="links">
+        <a href="vespera-europa" class="link">
+            <img src="img/vespera_thumb.png" alt="">
+            <span>Vespera Europa</span>
+        </a>
 
-  <h2 class="heading">Other Links</h2>
-  
-  <div class="links">
-    <a href="https://open.spotify.com/album/5tc6OYQvvOVQ80HkxnMCoT" class="link">Modernia OST</a>
-    <a href="https://open.spotify.com/album/1bbnNVavuE6TUuTfIfW6Xh" class="link">Birdnetic OST (Leoshortnose)</a>
-  </div>
+        <a href="modernia" class="link">
+            <img src="img/modernia_thumb.png" alt="">
+            <span>Modernia</span>
+        </a>
 
-  <!-- Embed Example
-  <div class="embed">
-    <iframe src="https://www.youtube.com/embed/bleh" allowfullscreen></iframe>
-  </div> -->
+        <a href="birdnetic" class="link">
+            <img src="img/birdnetic_thumb.png" alt="">
+            <span>Birdnetic</span>
+        </a>
 
-  <!-- Image Example
-  <div class="image">
-    <img src="https://via.placeholder.com/500x300" alt="Sample Image" class="full-width">
-  </div> -->
+        <a href="perfect-propaganda" class="link">
+            <img src="img/perfprop_thumb.png" alt="">
+            <span>Perfect Propaganda</span>
+        </a>
+    </div>
+</section>
 
-  <!-- Music Embed Example (Spotify)
-  <div class="music">
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3n3Ppam7vgaVa1iaRUc9Lp" width="100%" height="80" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  </div> -->
+  <section class="socials">
+    <h2>Follow Me</h2>
+    <div class="social-icons">
+      <a href="https://youtube.com/@SylvurrTV" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://sylvurrtv.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+        <a href="https://github.com/SylvurrTV" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
 
-  <a href="https://sylvurr.com/" class="bottomlink">Wow look at me, I'm cool bottom text! I hope nothing happens if you click me...</a>
+  <footer>
+    <p>© 2026 SylvurrTV</p>
+  </footer>
 
 </body>
 </html>
